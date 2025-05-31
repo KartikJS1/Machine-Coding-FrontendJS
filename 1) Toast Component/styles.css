@@ -1,0 +1,53 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.toast-container {
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.toast {
+  background-color: green;
+  width: 12rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 1rem;
+  animation: slide 0.3s ease-out forwards;
+}
+
+.toast span {
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  font-size: 1rem;
+}
+
+.success {
+  background-color: #46af46;
+}
+.info {
+  background-color: #5899fe;
+}
+.warning {
+  background-color: #fca200;
+}
+.error {
+  background-color: #df5239;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
